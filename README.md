@@ -1,9 +1,9 @@
 # Spoiler Matching
-This is the code for Spoiler Detection as Semantic Text Matching. The dataset along with a detailed description is available on Kaggle [here](https://www.kaggle.com/datasets/bobotran/spoiler-matching).
+This is the code for Spoiler Detection as Semantic Text Matching. The dataset along with a detailed description is available on [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching) and [Hugging Face](https://huggingface.co/datasets/bobotran/spoiler-matching).
 
 # Quickstart
 ## Data
-Start by downloading the dataset from [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching).
+Start by downloading the dataset from [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching) or [Hugging Face](https://huggingface.co/datasets/bobotran/spoiler-matching).
 
     mkdir data
 
