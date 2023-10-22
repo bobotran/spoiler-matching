@@ -1,0 +1,20 @@
+exp_name: nystromformer
+model_name: uw-madison/nystromformer-4096
+lr: 3.e-6
+lr_step_type: 'step'
+effective_batch_size: 32
+negative_ratio: 1
+negative_sampling_strategy: random
+weight_decay: 5.e-4
+
+resume_from: ""
+out_dir: 'data'
+
+summaries_fp: 'data/matching/with_autolabels/summaries.json'
+train_fp: 'data/matching/with_autolabels/train.json'
+val_fp: 'data/matching/with_autolabels/val.json'
+test_fp: 'data/matching/with_autolabels/test.json'
+
+gpu: 0
+device_batch_size: 1
+val_check_interval: 18432

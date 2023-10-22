@@ -1,0 +1,20 @@
+exp_name: handlabeled_nystromformer
+model_name: uw-madison/nystromformer-4096
+lr: 2.e-5
+lr_step_type: 'epoch'
+effective_batch_size: 32
+negative_ratio: 1
+negative_sampling_strategy: random
+weight_decay: 1.e-2
+
+resume_from: ""
+out_dir: 'data'
+
+summaries_fp: 'data/matching/handlabeled_only/summaries.json'
+train_fp: 'data/matching/handlabeled_only/train.json'
+val_fp: 'data/matching/handlabeled_only/val.json'
+test_fp: 'data/matching/handlabeled_only/test.json'
+
+gpu: 0
+device_batch_size: 1
+val_check_interval: null
