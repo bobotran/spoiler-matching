@@ -1,5 +1,5 @@
 # Spoiler Matching
-This is the code for Spoiler Detection as Semantic Text Matching. The dataset along with a detailed description is available on [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching) and [Hugging Face](https://huggingface.co/datasets/bobotran/spoiler-matching).
+This is the code for Spoiler Detection as Semantic Text Matching. The dataset along with a detailed description is available on [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching) and [Hugging Face](https://huggingface.co/datasets/bobotran/spoiler-matching?clone=true).
 
 # Quickstart
 ## Data
@@ -23,6 +23,9 @@ We use [Comet.ml](https://www.comet.com/docs/quick-start/) to store and read our
     python train.py --config config/longformer.yml
 
 Pytorch Lightning model checkpoints are automatically saved in the checkpoints directory under the experiment name and top 2 models with best validation MRR are kept.
+
+## Trained Models
+Alternatively, you can skip training and [download the models from the paper](https://huggingface.co/bobotran/spoiler-matcher/tree/main?clone=true). 
 
 ## Test
 Point the `resume_from` field in your config file (Ex: `checkpoints/longformer/longformer.yml`) to your desired model checkpoint, then
