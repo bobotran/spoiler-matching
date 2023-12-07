@@ -3,7 +3,7 @@ This is the code for Spoiler Detection as Semantic Text Matching. The dataset al
 
 # Quickstart
 ## Data
-Start by downloading the dataset from [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching) or [Hugging Face](https://huggingface.co/datasets/bobotran/spoiler-matching).
+Start by downloading the dataset from [Kaggle](https://www.kaggle.com/datasets/bobotran/spoiler-matching) or [Hugging Face](https://huggingface.co/datasets/bobotran/spoiler-matching?clone=true).
 
     mkdir data
 
@@ -28,11 +28,11 @@ Pytorch Lightning model checkpoints are automatically saved in the checkpoints d
 Alternatively, you can skip training and [download the models from the paper](https://huggingface.co/bobotran/spoiler-matcher/tree/main?clone=true). 
 
 ## Test
-Point the `resume_from` field in your config file (Ex: `checkpoints/longformer/longformer.yml`) to your desired model checkpoint, then
+Point the `resume_from` field in your config file (Ex: `models/checkpoints/longformer/longformer.yml`) to your desired model checkpoint (Ex: `models/checkpoints/longformer/best.ckpt`), then
 
     python test.py --config checkpoints/longformer/longformer.yml --mode test
 
 The individual MRR on the four test set shows will be printed first, then the total test set MRR.
 
 # Auto-labeling
-We provide a medium-size [autolabeled training set](https://www.kaggle.com/datasets/bobotran/spoiler-matching?select=matching) ready for training a spoiler matching model. But if you'd like to create your own training set, we also make available the raw unlabeled comments, as well as the irrelevant/relevant dataset we used to train the autolabeler.
+We provide a medium-size [autolabeled training set](https://huggingface.co/datasets/bobotran/spoiler-matching/tree/main/matching/with_autolabels) ready for training a spoiler matching model. But if you'd like to create your own training set, we also make available the [raw unlabeled comments](https://huggingface.co/datasets/bobotran/spoiler-matching/tree/main/filtering/unlabeled), as well as the [irrelevant/relevant dataset](https://huggingface.co/datasets/bobotran/spoiler-matching/tree/main/filtering/handlabeled) we used to train the autolabeler.

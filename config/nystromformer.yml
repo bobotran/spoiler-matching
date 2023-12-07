@@ -7,8 +7,8 @@ negative_ratio: 1
 negative_sampling_strategy: random
 weight_decay: 5.e-4
 
-resume_from: ""
-out_dir: 'data'
+resume_from: ''
+out_dir: 'models'
 
 summaries_fp: 'data/matching/with_autolabels/summaries.json'
 train_fp: 'data/matching/with_autolabels/train.json'
