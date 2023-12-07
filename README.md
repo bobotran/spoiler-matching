@@ -30,7 +30,7 @@ Alternatively, you can skip training and [download the models from the paper](ht
 ## Test
 Point the `resume_from` field in your config file (Ex: `models/checkpoints/longformer/longformer.yml`) to your desired model checkpoint (Ex: `models/checkpoints/longformer/best.ckpt`), then
 
-    python test.py --config checkpoints/longformer/longformer.yml --mode test
+    python test.py --config models/checkpoints/longformer/longformer.yml --mode test
 
 The individual MRR on the four test set shows will be printed first, then the total test set MRR.
 
